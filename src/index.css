@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-hand: "Caveat", cursive, ui-sans-serif, sans-serif;
+  
+  --color-paper: #FAF6F0;
+  --color-paper-card: #FFFFFF;
+  --color-ink: #2C2828;
+  --color-ink-light: #5C5454;
+  --color-accent: #E07A5F;
+  --color-rose-soft: #F5CAC3;
+  --color-sunny: #F6BD60;
+  --color-mint: #84A59D;
+  --color-sky-soft: #B8D8D8;
+}
+
+@layer base {
+  body {
+    @apply bg-paper text-ink font-sans antialiased selection:bg-accent/20 selection:text-ink;
+    background-image: radial-gradient(#E8DFD8 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight;
+  }
+}
+
+.font-handwriting {
+  font-family: var(--font-hand), cursive;
+}
+
+.lined-paper {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(#F0EAE1 1px, transparent 1px);
+  background-size: 100% 2.2rem;
+  line-height: 2.2rem;
+}
+

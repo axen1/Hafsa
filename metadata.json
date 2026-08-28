@@ -1,0 +1,6 @@
+{
+  "name": "Küçük Hafsa'nın Günlüğü",
+  "description": "Küçük Hafsa için tasarlanmış, çocuksu neşeyi ve anıları ölümsüzleştiren sıcak ve tatlı kişisel günlük blogu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
